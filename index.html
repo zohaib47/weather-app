@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="enter your location" class="input-box" id="input">
+                <button id="searchBtn">
+                <svg id="searchBtn"  xmlns="http://www.w3.org/2000/svg" height="24" width="24"  viewBox="0 0 512 512"> <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6
+                 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="./assets/404.png" alt="404 Error" >
+        </div>
+        <div class="weather-body">
+
+            <img src="/assets/cloud.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature"> 0 <sup>°C</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+
+            <div class="weather-details">
+
+                <div class="humidity">
+                    <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path class="cls-1" d="M49,38a17.5,17.5,0,0,1-35,0C14,22.7,28.22,8.48,31.5,8.48S49,22.7,49,38Z"/></svg>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                <svg class="feather feather-wind" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>                    
+                <div class="text">
+                        <span id="wind-speed">12km/H</span>
+                        <p>Wind Speed </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    <script src="script.js"></script>
+</body>
+</html>
