@@ -13,10 +13,8 @@ body{
     justify-content: center;
     align-items: center;
     color: #fff;
-    background: url("./assets/video/bg6.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("./assets/bg2.jpg") center/cover no-repeat fixed; 
+    margin: 0;
 
 }
 
@@ -27,9 +25,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2525255c;
+    background-color: #575757be;
     /* background: transparent ; */
-    border: 2px solid rgb(32, 93, 93);
+    border: 2px solid rgb(103, 74, 106);
     border-radius: 12px;
     padding: 28px;
     color: #fff;
@@ -105,11 +103,11 @@ body{
     justify-content: space-between;
     margin-top: 30px;
 }
-.humidity, .wind{
+.humidity, .wind, .pressure{
     display: flex;
     align-items: center;
 }
-.humidity{
+.humidity, .pressure{
     margin-left: 20px;
 }
 .wind{
